@@ -24,7 +24,7 @@ This fork adds the following additional features to the original sacd_extract.
 
 2. Concurrent ISO+DSF/DSDIFF processing (-w):  With this option, both ISO (-I) and DSF (-s) or DSDIFF (-p) can be generated concurrently.  This is much more efficient than generating ISO and DSF/DSDIFF sequentially because ISO generation is a very light process in terms of CPU usage while DST decompression (mandatory for DSF, optional for DSDIFF) is not.  The run time of this process is expected to be the slower of ISO and DSF/DSDIFF generation.
 
-3. Output directory options (-o and -y):  These allow users to specify the output directory.  For the concurent processing mode, -o is for ISO and -y is for DSF/DSDIFF.  The directories specified by these options must exist.  Output directories default to the current directory.
+3. Output directory options (-o and -y):  These allow users to specify the output directory.  For the concurrent processing mode, -o is for ISO and -y is for DSF/DSDIFF.  The directories specified by these options must exist.  Output directories default to the current directory.
 
 4. Enabled max compiler optimization in CMakeList.txt for gcc.  This provides about 3x speed boost to DST decoding (mandatory for DSF generation) for Linux and MacOS.
 
